@@ -1,0 +1,10 @@
+steps:
+  - label: ":npm: Install Dependencies"
+    command: "npm install"
+    agents:
+      queue: "default"
+
+  - label: ":npm: Build"
+    command: "npm run build"
+    agents:
+      queue: "default"
