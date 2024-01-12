@@ -1,11 +1,4 @@
 steps:
-  - label: ":hammer: Install Node.js and npm"
-    command: |
-      curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-      sudo apt-get install -y nodejs
-      node -v
-      npm -v
-
   - label: ":npm: Install Dependencies"
     command: "npm install"
     agents:
